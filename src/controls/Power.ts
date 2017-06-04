@@ -17,7 +17,7 @@ export default class PowerControl extends Control {
     })
     .catch((err) => {
       this.log(err);
-      return callback(err);
+      return callback(null, 0);
     });
   }
 
